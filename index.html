@@ -2,10 +2,13 @@
 <html lang="pt-BR">
 
 <head>
+  <!-- Definindo o conjunto de caracteres como UTF-8 -->
   <meta charset="UTF-8">
+  <!-- Configuração do comportamento da página em dispositos móveis -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Carregamento da folha de estilos - arquivo css na raiz do projeto -->
   <link rel="stylesheet" href="style.css">
-  <!-- Adicionando fonte 'Barlow' do google -->
+  <!-- Adicionando fonte 'Barlow' do Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
@@ -19,6 +22,7 @@
     <header>
       <nav>
         <ul>
+            <!-- Cada um dos itens da lista aponta para um id para uma navegação interna -->
           <li><a href="#home">Início</a></li>
           <li><a href="#about">Sobre mim</a></li>
           <li><a href="#formation">Formação</a></li>
@@ -28,7 +32,7 @@
       </nav>
     </header>
     <main>
-       <!-- Seção inicial -->
+      <!-- Seção inicial - Id de navegação: home -->
       <div id="home">
         <section class="home-img">
           <img src="./images/octocat.png" alt="Octocat">
@@ -39,7 +43,7 @@
         </section>
       </div>
 
-      <!-- Seção sobre mim -->
+      <!-- Seção sobre mim - Id de navegação: about -->
       <div id="about">
         <div class="about-container">
           <h2 class="about-title">Sobre mim</h2>
@@ -56,32 +60,34 @@
         </div>
       </div>
 
-      <!-- Seção sobre minha formação -->
+      <!-- Seção sobre minha formação - Id de navegação: formation -->
       <div id="formation">
         <div class="formation-container">
         <h2 class="formation-title">Formação</h2>
         <p class="formation-subtitle">Minhas principais formações:</p>
-        <div class="formation-cards">
-          <section class="formation-card">
+      
+        <!-- Seção com minhas principais formações -->
+        <section class="formation-cards">
+          <div class="formation-card">
             <p class="formation-card-title">Análise e Desenvolvimento de Sistemas - Graduação</p>
             <p class="formation-card-info">UNINTER - EAD</p>
             <p class="formation-card-year">2024 - em curso</p>
-          </section>
-          <section class="formation-card">
+          </div>
+          <div class="formation-card">
             <p class="formation-card-title">Desenvolvimento Web FullStack - Curso Livre</p>
             <p class="formation-card-info">Kenzie Academy Brasil - ONLINE</p>
             <p class="formation-card-year">2021 - 2022</p>
-          </section>
-          <section class="formation-card">
+          </div>
+          <div class="formation-card">
             <p class="formation-card-title">Licenciatura em Química - Graduação</p>
             <p class="formation-card-info">Universidade Federal de Pelotas(UFPEL) - Presencial</p>
             <p class="formation-card-year">2016 - 2021</p>
-          </section>
-        </div>
+          </div>
+        </section>
         <p class="formation-info">Além dessas formações, ao longo da minha trajetória na área de tecnologia realizei diversos cursos de plataformas pagas e gratuitas, além de bootcamps.</p>
         <p class="formation-info">Dessa maneira, tive contato com diversas tecnologias, tais como:</p>
         <div class="formation-techs">
-           <!-- Ícones de techonologias retiradas no site devicon.dev -->
+           <!-- Ícones de tecnologias retiradas do site devicon.dev -->
           <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original-wordmark.svg" />
           <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" />
           <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg" />
@@ -101,12 +107,14 @@
       </div>
       </div>
 
-      <!-- Seção do meu portfólio -->
+      <!-- Seção do meu portfólio - Id de navegação: portfolio -->
       <div id="portfolio">
         <div class="portfolio-container">
           <div class="portfolio-subcontainer">
             <p class="portfolio-title">Projetos</p>
             <p class="portfolio-subtitle">Segue alguns projetos desenvolvidos por mim durante estudos:</p>
+
+            <!-- Seção com alguns projetos desenvolvidos por mim com links para o repositório e demo dos projetos -->
             <section class="portfolio-cards">
               <div class="portfolio-card">
                   <p class="portfolio-card-title">Portfólio</p>
@@ -153,10 +161,11 @@
         </div>
       </div>
 
-      <!-- Seção de contato -->
+      <!-- Seção de contato - Id de navegação: contact -->
       <div id="contact">
         <h2 class="contact-title">Entre em contato comigo pelo formulário abaixo:</h2>
         <div class="contact-container">
+          <!-- Inserção de formulário estático com inputs e textarea -->
           <form action="" class="contact-form" >
             <div class="contact-form-field">
               <label for="nome">Nome:</label>
@@ -172,13 +181,15 @@
             </div>
             <button type="submit">Enviar</button>
           </form>
-      
+          
+          <!-- Links externos para envio de email ou acessar o meu linkedin -->
           <div class="contact-links">
             <p>Ou se preferir, para me contatar por <a href="mailto:lealmleticia@gmail.com/">Email</a> ou <a href="https://www.linkedin.com/in/leticia-leal-moreira/" target="_blank">Linkedin!</a></p>
           </div>
         </div>
       </div>
     </main>
+
     <!-- Footer da página -->
     <footer>
       <p>desenvolvido por Letícia Leal Moreira - fullstack developer - 2024</p>
